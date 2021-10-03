@@ -19,6 +19,7 @@
       <div class="container hdr-container ">
         <nav class="hdr-nav">
           <a href="./index.html" lang="en" class="logo hdr-logo">Web<span class="hdr-second-logo">Studio</span></a>
+          
           <ul class="hdr-list list">
 
             <li class="link-item">
@@ -61,7 +62,7 @@
       <section class="hero-section section">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="hero-button">Заказать услугу</button>
+          <button data-modal-open type="button" class="hero-button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <!-- Достоинства компании -->
@@ -131,12 +132,15 @@
           <ul class="about-list">
             <li class="about-item">
               <img src="./images/code.jpg" alt="Написание кода" width="370" class="about-company-photo" />
+              <p class="about-text">Десктопные приложения</p>
             </li>
             <li class="about-item">
               <img src="./images/phone.jpg" alt="Адаптация под телефон" width="370" class="about-company-photo" />
+              <p class="about-text">Мобильные приложения</p>
             </li>
             <li class="about-item">
               <img src="./images/tablet.jpg" alt="Адаптация под планшет" width="370" class="about-company-photo" />
+              <p class="about-text">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -413,5 +417,18 @@
         </div>
       
     </footer>
+
+    <!-- Modal -->
+
+    <div class="backdrop" data-modal>
+      <div class="modal">
+        <button class="modal-button" data-modal-close>
+          <svg class="button-modal">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

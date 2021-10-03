@@ -8,6 +8,7 @@
   --border-portf: #eeeeee;
   --shadow: #a1a1a5;
   --bgd-icon: #43444d;
+  --bgd-dark-grey: #41425d;
 
   /* text  */
   --txt-blue: #2196f3;
@@ -118,6 +119,7 @@ img {
 }
 
 .link-item {
+  position: relative;
 }
 
 .link-item:not(:last-child) {
@@ -138,6 +140,21 @@ img {
   text-decoration: none;
   display: block;
   padding: 32px 0px 32px 0px;
+}
+.hdr-link::after {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 4px;
+  background-color: var(--bgd-blue);
+  border-radius: 2px;
+  bottom: 0;
+  opacity: 0;
+}
+
+.hdr-list .hdr-link.current::after {
+  opacity: 1;
 }
 
 .hdr-list .link.current {
@@ -208,6 +225,7 @@ img {
   background-position: center;
   background-size: cover;
   max-width: 1600px;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -302,6 +320,27 @@ img {
 
 .about-item {
   list-style: none;
+  display: flex;
+  position: relative;
+}
+
+.about-company-photo {
+}
+
+.about-text {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--txt-white);
+  text-transform: uppercase;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
 }
 
 .about-item:not(:last-child) {
@@ -632,4 +671,48 @@ img {
   padding: 20px 24px;
   border: 1px solid var(--border-portf);
   border-top: none;
+}
+
+/* Modals */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  width: 528px;
+  height: 581px;
+  background-color: var(--txt-white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 4px;
+}
+
+.button-modal {
+  width: 11px;
+  height: 11px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.modal-button {
+  width: 30px;
+  height: 30px;
+  top: 8px;
+  right: 8px;
+  position: absolute;
 }
