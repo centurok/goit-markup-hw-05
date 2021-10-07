@@ -21,6 +21,7 @@
 }
 
 /* constant */
+
 *,
 *::before,
 *::after {
@@ -33,6 +34,7 @@ body {
   background-color: var(--bgd-white);
   letter-spacing: 0.03em;
 }
+
 p,
 ul,
 li,
@@ -45,9 +47,6 @@ h6 {
   margin: 0;
   padding: 0;
 }
-/* a {
-  display: block;
-} */
 
 .list {
   list-style-type: none;
@@ -64,6 +63,7 @@ h6 {
   padding-right: 15px;
   margin: 0 auto;
 }
+
 img {
   margin: 0 auto;
   padding: 0;
@@ -76,18 +76,23 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 .logo {
   text-decoration: none;
 }
+
 /* header */
+
 .header {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: var(--border);
 }
+
 .hdr-container {
   display: flex;
 }
+
 .hdr-logo {
   padding: 24px 0px 25px 0px;
   margin-right: 73px;
@@ -143,6 +148,7 @@ img {
   padding: 32px 0px 32px 0px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .hdr-link::after {
   display: block;
   position: absolute;
@@ -182,9 +188,6 @@ img {
   margin-right: 50px;
 }
 
-.svg-icon {
-}
-
 .mail-icon {
   margin-right: 10px;
 }
@@ -211,8 +214,6 @@ img {
 }
 
 /* Main Studio */
-.main-studio {
-}
 
 .hero-section {
   background-color: var(--bgd-very-dark-grayish-blue);
@@ -255,6 +256,7 @@ img {
   padding: 10px 32px;
   border-radius: 4px;
 }
+
 /* Dignity company */
 
 .visually-hidden {
@@ -267,9 +269,11 @@ img {
   border: 0;
   clip: rect(0 0 0 0);
 }
+
 .dignity-list {
   display: flex;
 }
+
 .dignity-list > .dignity-item {
   flex-basis: auto;
 }
@@ -285,6 +289,7 @@ img {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+
 .thumb {
   background-color: var(--bgd-light-grayish-blue);
   width: 270px;
@@ -301,6 +306,7 @@ img {
   color: var(--txt-dark-gray);
   max-width: 270px;
 }
+
 .dignity-text:not(:last-child) {
   margin-right: 30px;
 }
@@ -309,6 +315,7 @@ img {
 .section.about-company {
   padding-top: 0;
 }
+
 .about-company-title {
   font-weight: 700;
   font-size: 36px;
@@ -316,6 +323,7 @@ img {
   text-align: center;
   margin-bottom: 50px;
 }
+
 .about-list {
   display: flex;
 }
@@ -324,9 +332,6 @@ img {
   list-style: none;
   display: flex;
   position: relative;
-}
-
-.about-company-photo {
 }
 
 .about-text {
@@ -364,6 +369,7 @@ img {
 .team-list {
   display: flex;
 }
+
 .team-list > .team-member {
   flex-basis: auto;
 }
@@ -381,6 +387,7 @@ img {
   list-style: none;
   justify-content: center;
 }
+
 .icon-item {
   display: inline-flex;
   align-items: center;
@@ -389,6 +396,7 @@ img {
 .icon-item:not(:last-child) {
   margin-right: 10px;
 }
+
 .icon-link {
   display: flex;
   align-items: center;
@@ -408,8 +416,7 @@ img {
 }
 
 .team-title {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 32px;
   background-color: var(--bgd-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -459,6 +466,7 @@ img {
   width: 170px;
   height: 92px;
   border: 1px solid var(--clr-icon);
+  border-radius: 4px;
   align-items: center;
   justify-content: center;
   fill: var(--clr-icon);
@@ -484,6 +492,7 @@ img {
   display: flex;
   background-color: var(--bgd-very-dark-grayish-blue);
 }
+
 .footer-section {
   display: flex;
   align-items: baseline;
@@ -497,6 +506,7 @@ img {
 .address {
   font-style: normal;
 }
+
 .footer-section .logo {
   display: inline-block;
   margin-bottom: 20px;
@@ -515,6 +525,7 @@ img {
   font-size: 26px;
   line-height: 31px;
 }
+
 .ftr-address {
   display: flex;
   font-size: 14px;
@@ -534,25 +545,24 @@ img {
   list-style: none;
 }
 
-.address .contact-link {
+.address .ftr-link {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
 }
-.contact-link {
+
+.ftr-link {
+  padding: 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-link:focus,
-.contact-link:hover {
+.ftr-link:focus,
+.ftr-link:hover {
   color: var(--txt-blue);
   fill: var(--txt-blue);
 }
 
-.ftr-link {
-  padding: 0;
-}
 .contact-ftr:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -579,6 +589,7 @@ img {
 .enjoy-icon-item:not(:last-child) {
   margin-right: 10px;
 }
+
 .enjoy-icon-link {
   display: flex;
   align-items: center;
@@ -595,19 +606,20 @@ img {
 .ftr-icon {
   fill: var(--txt-white);
 }
+
 .enjoy-icon-link:hover,
 .enjoy-icon-link:focus {
   background-color: var(--bgd-blue);
 }
 
 /* Main Portfolio */
-.main-section {
-}
+
 .list-button {
   display: flex;
   justify-content: center;
   margin-bottom: 56px;
 }
+
 .button {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -623,10 +635,12 @@ img {
     color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .list-button .button.current {
   background-color: var(--bgd-blue);
   color: var(--txt-white);
 }
+
 .button:focus,
 .button:hover {
   color: var(--txt-white);
@@ -663,10 +677,10 @@ img {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-link:hover,
-.project-link:focus {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+.project-item:hover,
+.project-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-title {
@@ -704,26 +718,31 @@ img {
   width: 370px;
   height: 100%;
   padding: 63px 24px;
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: rgba(33, 150, 243, 0.9);
 }
 
-.project-item:hover .project-txt {
+.project-item:hover .project-txt,
+.project-item:focus .project-txt {
   transform: translateY(0px);
 }
-*/
+.project-link:hover .project-txt,
+.project-link:focus .project-txt {
+  transform: translateY(0px);
+}
 
 /* Modals */
-
 
 .backdrop {
   position: fixed;
   top: 0;
   left: 0;
-  width: 200px;
-  height: 100px;
-  background-color: rgba(255, 0, 0);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -740,6 +759,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 4px;
+  transition: ;
 }
 
 .button-modal {
