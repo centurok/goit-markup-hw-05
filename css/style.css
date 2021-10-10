@@ -157,7 +157,7 @@ img {
   height: 4px;
   background-color: var(--bgd-blue);
   border-radius: 2px;
-  bottom: 0;
+  bottom: -1px;
   opacity: 0;
 }
 
@@ -211,6 +211,7 @@ img {
 .contact-link:hover,
 .contact-link:focus {
   color: var(--txt-blue);
+  fill: var(--txt-blue);
 }
 
 /* Main Studio */
@@ -674,13 +675,16 @@ img {
 
 .project-link {
   text-decoration: none;
+  /* transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+}
+.project-item {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-item:hover,
 .project-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .project-title {
